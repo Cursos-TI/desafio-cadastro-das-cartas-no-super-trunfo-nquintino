@@ -44,7 +44,7 @@ int main(void)
 
     codigo_carta00[1] = '0';                  // Define o caractere do meio do código como '0'.
     codigo_carta00[3] = '\0';                 // Adiciona o terminador nulo ao final da string, essencial para que a string seja lida corretamente.
-    getchar();
+    getchar(); //captura o caracter new line -> limpa o buffer
 
     printf("Digite o nome da cidade:\n");     // Pede o nome da cidade.
     fgets(nome_cidade00, 30, stdin);
@@ -77,7 +77,7 @@ int main(void)
     
     codigo_carta01[1] = '0';
     codigo_carta01[3] = '\0';
-    getchar();
+    getchar(); //captura o caracter new line -> limpa o buffer
     printf("Digite o nome da cidade:\n");     // Pede o nome da cidade.
     fgets(nome_cidade01, 30, stdin);
     nome_cidade01[strcspn(nome_cidade01, "\n")] = '\0';
